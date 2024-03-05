@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto';
+}
+
+main {
+    min-height: 80vh;
+}
+.pagina-principal {
+    .card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .card-img-top {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .card-body {
+        color: $colorAzulPrincipal;
+
+        .card-title {
+            font-size: 30px;
+        }
+
+        .btn {
+            border: 1px solid $colorAzulPrincipal;
+            border-radius: 5px;
+            background-color: $colorAzulPrincipal;
+            padding: 10px 20px;
+            cursor: pointer;
+            color: white;
+
+            &:hover {
+                background-color: $colorAzulSecundario;
+                color: $colorAzulPrincipal;
+            
+            }
+        }
+    }
+
+    .card-blue {
+        border: 1px solid $colorAzulPrincipal;
+        /*border-radius: 10px;*/
+        margin: 1.5rem;
+        padding: 0.5rem;
+        box-shadow: 0 1px 2px $colorAzulPrincipal;
+        transition: 300ms;
+
+        &:hover {
+            border: 1px solid $colorAzulSecundario;
+            margin: 0.5rem;
+            
+        }
+    }
+    
+    .card-orange {
+        border: 1px solid $colorNaranjaPrincipal;
+        /*border-radius: 10px;*/
+        margin: 1.5rem;
+        padding: 0.5rem;
+        box-shadow: 0 1px 2px $colorNaranjaPrincipal;
+        transition: 300ms;
+
+        &:hover {
+            border: 1px solid $colorNaranjaSecundario;
+            margin: 0.5rem;
+            
+        }
+    }
+
+}
+
+

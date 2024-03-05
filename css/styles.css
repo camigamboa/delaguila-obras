@@ -1,0 +1,218 @@
+.first-nav {
+  margin-top: 0.5rem;
+}
+.first-nav .btn {
+  border: 1px solid #D7DBEA;
+}
+.first-nav .btn:hover {
+  border: 1px solid #2F3684;
+}
+.first-nav .user a {
+  text-decoration: none;
+  color: #2F3684;
+  font-weight: bold;
+}
+.first-nav .form-control, .first-nav .btn {
+  border: 0.5px solid #D7DBEA;
+}
+
+.second-nav {
+  margin-top: 1rem;
+  background-color: #2F3684;
+  box-shadow: 0 1px 2px #2F3684;
+  color: white;
+  list-style-type: none;
+}
+.second-nav .dropdown-menu .dropdown-item {
+  color: #2F3684;
+}
+.second-nav .dropdown-menu .dropdown-item:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #2F3684;
+}
+.second-nav .dropdown-menu .dropdown-item:active {
+  color: white;
+  text-decoration: none;
+  background-color: #F8934E;
+}
+
+.items-nav {
+  color: white;
+}
+.items-nav:hover {
+  color: #F8934E;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+main {
+  min-height: 80vh;
+}
+
+.pagina-principal .card {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.pagina-principal .card .card-img-top {
+  padding-bottom: 1rem;
+}
+.pagina-principal .card-body {
+  color: #2F3684;
+}
+.pagina-principal .card-body .card-title {
+  font-size: 30px;
+}
+.pagina-principal .card-body .btn {
+  border: 1px solid #2F3684;
+  border-radius: 5px;
+  background-color: #2F3684;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+.pagina-principal .card-body .btn:hover {
+  background-color: #D7DBEA;
+  color: #2F3684;
+}
+.pagina-principal .card-blue {
+  border: 1px solid #2F3684;
+  /*border-radius: 10px;*/
+  margin: 1.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 1px 2px #2F3684;
+  transition: 300ms;
+}
+.pagina-principal .card-blue:hover {
+  border: 1px solid #D7DBEA;
+  margin: 0.5rem;
+}
+.pagina-principal .card-orange {
+  border: 1px solid #F8934E;
+  /*border-radius: 10px;*/
+  margin: 1.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 1px 2px #F8934E;
+  transition: 300ms;
+}
+.pagina-principal .card-orange:hover {
+  border: 1px solid rgba(248, 146, 78, 0.4156862745);
+  margin: 0.5rem;
+}
+
+.normas {
+  margin-bottom: 1rem;
+}
+
+.card-mandataria {
+  border: 1px solid #2F3684;
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 1px 2px #2F3684;
+  transition: 300ms;
+}
+.card-mandataria a {
+  text-decoration: none;
+  text-align: center;
+  color: #2F3684;
+}
+.card-mandataria:hover {
+  border: 1px solid rgba(248, 146, 78, 0.4156862745);
+  margin: 0rem;
+}
+
+/*Normas PDF*/
+.title-normas a {
+  color: #2F3684;
+  text-decoration: none;
+}
+.title-normas a:hover {
+  color: #F8934E;
+}
+
+.link-ooss a {
+  color: #2F3684;
+  font-size: 20px;
+}
+.link-ooss a:hover {
+  color: #F8934E;
+}
+
+footer {
+  color: #2F3684;
+  margin-bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #2F3684;
+}
+footer a:hover {
+  color: #F8934E;
+}
+footer .list-footer ul, footer .list-footer li {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+@media (max-width: 767px) {
+  .second-nav {
+    background-color: #fff;
+  }
+  .nav-link {
+    color: #2F3684;
+  }
+  .first-nav {
+    justify-content: space-around;
+  }
+  .pagina-principal {
+    background-color: rgba(215, 219, 234, 0.6235294118);
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  .form .imagen {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 435px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1098px) {
+  .pagina-principal .card-body {
+    color: #2F3684;
+  }
+  .pagina-principal .card-body .card-title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 805px) {
+  .telefonos h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 378px) {
+  .footer {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1160px) {
+  .prestador .container-fluid {
+    display: grid;
+    grid-template-columns: 3fr;
+  }
+  .prestador .container-fluid .imagen {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

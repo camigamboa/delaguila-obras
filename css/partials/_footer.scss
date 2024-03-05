@@ -1,0 +1,24 @@
+footer {
+    color: $colorAzulPrincipal;
+    margin-bottom: 0;
+    
+
+    a {
+        text-decoration: none;
+        color: $colorAzulPrincipal;
+
+        &:hover{
+            color: $colorNaranjaPrincipal;
+        }
+    }
+
+    .list-footer {
+        
+
+        ul, li {
+            display: flex;
+            gap: 1rem;
+            list-style-type: none;
+        }
+    }
+}
