@@ -9,12 +9,27 @@ header {
         font-weight: bold;
     }
 
+    .form-control {
+        border: 1px solid $colorAzulSecundario;
+    }
+    
+    
+    .btn {
+            border: 1px solid $colorAzulSecundario;
+
+            &:hover {
+                border: 1px solid $colorAzulPrincipal;
+            }
+    }
+    
 
     .second-nav {
         background-color: $colorAzulPrincipal;
         box-shadow: 0 1px 2px $colorAzulPrincipal;
         list-style-type: none;
         margin-top: 0.5rem;
+
+       
 
         .dropdown-menu {
             color: $colorAzulPrincipal;

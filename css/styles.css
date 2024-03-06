@@ -13,6 +13,15 @@ header .user a {
   color: #2F3684;
   font-weight: bold;
 }
+header .form-control {
+  border: 1px solid #D7DBEA;
+}
+header .btn {
+  border: 1px solid #D7DBEA;
+}
+header .btn:hover {
+  border: 1px solid #2F3684;
+}
 header .second-nav {
   background-color: #2F3684;
   box-shadow: 0 1px 2px #2F3684;
@@ -184,6 +193,6 @@ main {
 }
 @media (max-width: 378px) {
   .footer {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */
