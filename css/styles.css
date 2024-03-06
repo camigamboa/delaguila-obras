@@ -1,49 +1,45 @@
-.first-nav {
-  margin-top: 0.5rem;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.first-nav .btn {
-  border: 1px solid #D7DBEA;
+
+/*Barras de nav*/
+header {
+  padding-top: 1rem;
 }
-.first-nav .btn:hover {
-  border: 1px solid #2F3684;
-}
-.first-nav .user a {
+header .user a {
   text-decoration: none;
   color: #2F3684;
   font-weight: bold;
 }
-.first-nav .form-control, .first-nav .btn {
-  border: 0.5px solid #D7DBEA;
-}
-
-.second-nav {
-  margin-top: 1rem;
+header .second-nav {
   background-color: #2F3684;
   box-shadow: 0 1px 2px #2F3684;
-  color: white;
   list-style-type: none;
+  margin-top: 0.5rem;
 }
-.second-nav .dropdown-menu .dropdown-item {
+header .second-nav .dropdown-menu {
   color: #2F3684;
 }
-.second-nav .dropdown-menu .dropdown-item:hover {
+header .second-nav .dropdown-menu .dropdown-item:hover {
   color: white;
   text-decoration: none;
   background-color: #2F3684;
 }
-.second-nav .dropdown-menu .dropdown-item:active {
+header .second-nav .dropdown-menu .dropdown-item:active {
   color: white;
   text-decoration: none;
   background-color: #F8934E;
 }
-
-.items-nav {
+header .items-nav {
   color: white;
 }
-.items-nav:hover {
+header .items-nav:hover {
   color: #F8934E;
 }
 
+/*Container Index*/
 body {
   font-family: "Roboto";
 }
@@ -72,6 +68,7 @@ main {
   padding: 10px 20px;
   cursor: pointer;
   color: white;
+  font-style: italic;
 }
 .pagina-principal .card-body .btn:hover {
   background-color: #D7DBEA;
@@ -141,47 +138,35 @@ main {
   color: #F8934E;
 }
 
-footer {
+/*Footer*/
+.footer {
   color: #2F3684;
-  margin-bottom: 0;
+  border-top: 2px solid #2F3684;
+  box-shadow: 1px #D7DBEA;
+  height: 100px;
 }
-footer a {
-  text-decoration: none;
+.footer .item-footer {
   color: #2F3684;
 }
-footer a:hover {
-  color: #F8934E;
-}
-footer .list-footer ul, footer .list-footer li {
-  display: flex;
-  gap: 1rem;
-  list-style-type: none;
+.footer .item-footer a, .footer .item-footer ul, .footer .item-footer li {
+  color: #2F3684;
 }
 
 @media (max-width: 767px) {
-  .second-nav {
+  body {
+    font-size: 1.2rem;
+  }
+  header .second-nav {
     background-color: #fff;
   }
-  .nav-link {
+  header .nav-link {
     color: #2F3684;
   }
-  .first-nav {
+  header .first-nav {
     justify-content: space-around;
   }
-  .pagina-principal {
+  header .pagina-principal {
     background-color: rgba(215, 219, 234, 0.6235294118);
-  }
-  body {
-    font-size: 1.2rem;
-  }
-  .form .imagen {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  body {
-    display: inline-block;
-    font-size: 1.2rem;
   }
 }
 @media (max-width: 435px) {
@@ -197,22 +182,8 @@ footer .list-footer ul, footer .list-footer li {
     font-size: 25px;
   }
 }
-@media (max-width: 805px) {
-  .telefonos h5 {
-    font-size: 16px;
-  }
-}
 @media (max-width: 378px) {
   .footer {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 1160px) {
-  .prestador .container-fluid {
-    display: grid;
-    grid-template-columns: 3fr;
-  }
-  .prestador .container-fluid .imagen {
-    display: none;
+    font-size: 0.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */

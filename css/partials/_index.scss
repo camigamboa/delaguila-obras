@@ -1,11 +1,13 @@
+/*Container Index*/
 body {
     font-family: 'Roboto';
 }
 
 main {
     min-height: 80vh;
-}
-.pagina-principal {
+    
+ }
+ .pagina-principal {
     .card {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -29,6 +31,7 @@ main {
             padding: 10px 20px;
             cursor: pointer;
             color: white;
+            font-style: italic;
 
             &:hover {
                 background-color: $colorAzulSecundario;
@@ -69,5 +72,3 @@ main {
     }
 
 }
-
-

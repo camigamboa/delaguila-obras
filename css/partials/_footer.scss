@@ -1,24 +1,18 @@
-footer {
+ /*Footer*/
+  
+ .footer {
     color: $colorAzulPrincipal;
-    margin-bottom: 0;
+    border-top: 2px solid $colorAzulPrincipal;
+    box-shadow: 1px $colorAzulSecundario;  
+    height: 100px; 
     
-
-    a {
-        text-decoration: none;
-        color: $colorAzulPrincipal;
-
-        &:hover{
-            color: $colorNaranjaPrincipal;
+    .item-footer {
+      color: $colorAzulPrincipal;
+        a, ul, li {
+          color: $colorAzulPrincipal;
         }
     }
 
-    .list-footer {
-        
+ 
 
-        ul, li {
-            display: flex;
-            gap: 1rem;
-            list-style-type: none;
-        }
-    }
-}
+}  
