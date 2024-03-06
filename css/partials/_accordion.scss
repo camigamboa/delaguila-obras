@@ -1,0 +1,20 @@
+.accordion {
+        --bs-accordion-btn-bg: #ffff;
+        --bs-accordion-active-bg: #D7DBEA;
+        --bs-accordion-active-color: #2F3684;
+        --bs-accordion-color:#2F3684;
+        --bs-accordion-border-color: #2F3684;
+        --bs-accordion-btn-focus-box-shadow: none;
+    }
+
+.accordion-body {
+     a {
+        text-decoration: none;
+        color: #2F3684;
+        font-size: 16px;
+
+        &:hover {
+            color: #d16f2d6a;
+        }
+    }
+}

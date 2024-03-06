@@ -74,7 +74,7 @@ main {
   border: 1px solid #2F3684;
   border-radius: 5px;
   background-color: #2F3684;
-  padding: 10px 20px;
+  padding: 5px 10px;
   cursor: pointer;
   color: white;
   font-style: italic;
@@ -159,6 +159,24 @@ main {
 }
 .footer .item-footer a, .footer .item-footer ul, .footer .item-footer li {
   color: #2F3684;
+}
+
+.accordion {
+  --bs-accordion-btn-bg: #ffff;
+  --bs-accordion-active-bg: #D7DBEA;
+  --bs-accordion-active-color: #2F3684;
+  --bs-accordion-color:#2F3684;
+  --bs-accordion-border-color: #2F3684;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-body a {
+  text-decoration: none;
+  color: #2F3684;
+  font-size: 16px;
+}
+.accordion-body a:hover {
+  color: rgba(209, 111, 45, 0.4156862745);
 }
 
 @media (max-width: 767px) {
