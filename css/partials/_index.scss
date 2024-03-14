@@ -8,6 +8,10 @@ main {
     
  }
  .pagina-principal {
+     
+    .bi {
+        font-size: 1em;
+    }
     .card {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -42,7 +46,7 @@ main {
     }
 
     .card-blue {
-        border: 1px solid $colorAzulPrincipal;
+        border: 2px solid $colorAzulPrincipal;
         /*border-radius: 10px;*/
         margin: 1.5rem;
         padding: 0.5rem;
@@ -57,7 +61,7 @@ main {
     }
     
     .card-orange {
-        border: 1px solid $colorNaranjaPrincipal;
+        border: 2px solid $colorNaranjaPrincipal;
         /*border-radius: 10px;*/
         margin: 1.5rem;
         padding: 0.5rem;

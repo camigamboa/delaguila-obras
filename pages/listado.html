@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,7 +66,1565 @@
       </nav>
 </header>
 
+<main>
+  <div class="container">
+  <div class="table-responsive">
+    <table class="table table-bordered" id="myTable">
+      <thead class="sticky-top primera-fila">
+        <tr>
+          <th scope="col">OBRA SOCIAL</th>
+          <th scope="col">DIAS</th>
+          <th scope="col">MANDATARIA</th>
+          <th scope="col">RECETARIO</th>
+          <th scope="col">CARTILLA</th>
+          <th scope="col">MEMBRETE</th>
+          <th scope="col">GENÉRICO</th>
+          <th scope="col">DIAGNÓSTICO</th>
+          <th scope="col">OBSERVACIONES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">AR VIDA DIRECTO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="../assets/recetarios_credenciales/credencial_arvida.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"></td>
+        </tr>
 
+        <tr>
+          <th scope="row">AMCA-ORBIS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <img src="../assets/recetarios_credenciales/credencial_amca.png" alt="" class="img-fluid ">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">AMMFFA SALUD</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar" target="_blank">Colfarma</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row">ANDAR SALUD</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmasur.html" >Farmasur</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">ASSISTENCIAL SALUD</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/ASSISTENCIAL SALUD - PRESTADORES 23-10-2017.pdf" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">AVALIAN</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">BANCO PROVINCIA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+           <!-- Button trigger modal -->
+           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalbcopcia">
+            Oficial/Convencional
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalbcopcia" tabindex="-1" aria-labelledby="exampleModalLabelbcopcia" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelbcopcia">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   <img src="../assets/recetarios_credenciales/credencial_bcopcia.png" alt="" class="img-fluid ">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">BAYRES PLAN</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">BINIMED</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://binimedweb.ddaval.com.ar" target="_blank">Binimed</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">BONOS EUCERIN</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">BONOS LOREAL</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">BONOS PIERRE FABRE</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">BONOS DOVEDERMASERIES</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">CAJA DE ESCRIBANOS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Oficial/Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">CASA</th>
+          <td class="dias">60</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional/Oficial (Solo PMI)</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">CASA CRONICIDAD</th>
+          <td class="dias">60</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://farmacias.sisgemed.com.ar/" target="_blank">Garantía Medica</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">CEMIC</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmmas.html">Farmmas Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row">CEMIC 9000</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">COMEI</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row">CONF. EPISCOPAL ARGENTINA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmasur.html">Farmasur Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">CORPORACIÓN MEDICA ASISTENCIAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="./normas/admifarm.html">Según Plan <i class="bi bi-filetype-pdf"></i></a>
+          </td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+
+        <tr class="table-active">
+          <th scope="row">CRISTAL SALUD MEDICINA PRIVADA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/audifarm.html">Audifarm</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">DASUTEN</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">DOCTORED</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/gruporoisa.html">Grupo Roisa</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://val.gunei.com.ar/" target="_blank">Gunei</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">DOSUBA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmmas.html">Farmmas</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/DOSUBA_Listados Prestadores.pdf" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">EMEREGENCIAS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/gruporoisa.html">Grupo Roisa</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://val.gunei.com.ar" target="_blank">Gunei</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">ENSALUD OSPIN</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://ospinweb.ddaval.com.ar/" target="_blank">Ospin</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">ENSALUD GAMA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://plangamaweb.ddaval.com.ar/" target="_blank">Plan Gama</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">FEMEDICA</th>
+          <td class="dias">31</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/FEMEDICA - Cartilla de Prestadores - 01-12-2020.pdf" target="_blank">Según Plan <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">GALENO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmalink.html">Farmalink Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">GUINCHEROS Y MAQUINISTAS (SPS SALUD)</th>
+          <td class="dias">5</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">HOPE WILLIAM</th>
+          <td class="dias">90</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmalink.html">Farmalink Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">HOSPITAL ALEMAN</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/ALEMAN-Listado_Prof_e_Instituciones_Habilitadas_(19-12-22)_16122022.pdf" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">HOSPITAL AUSTRAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/Prestadores-Hosp-Austral-salud-a-Enero-2021-1.pdf" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr>
+          <th scope="row">IGUALDAD SALUD</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">I MEDICAL (I SALUD)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">INTEGRAL MED</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">IOMA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio Aguila</a></td>
+          <td class="recetario">Oficial/SAMO</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">JARDINEROS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmasur.html">Farmasur</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">JERARQUICOS SALUD</th>
+          <td class="dias">15</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">JUBILADOS TELEFONICOS OSPETELCO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">JUBILADOS TELEFONICOS OSTEL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">LUIS PASTEUR</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr>
+          <th scope="row">MAESTRANZA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmasur.html">Farmasur</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">MAGNA SALUD PLAN GAMA OSSIMRA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">MAGNA SALUD PROTECCION SALUD</th>
+          <td class="dias">15</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">MEDICAL CORPORATIVE TRADE</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">MEDICUS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmalink.html">Farmalink</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">MEDIFE ASOCIACION CIVIL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+           <!-- Button trigger modal -->
+           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalmedife">
+            Convencional/Electronicas
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalmedife" tabindex="-1" aria-labelledby="exampleModalLabelmedife" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelmedife">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   <img src="../assets/recetarios_credenciales/recetario_medife.png" alt="" class="img-fluid ">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr>
+          <th scope="row">MODUM SALUD (EX DM SALUD)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">MPN MEDICAMENTOS DE PRIMER NIVEL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr>
+          <th scope="row">MTTV (MAQUINISTAS DE TEATRO Y TV)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">MUTUAL 12 DE ENERO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario">Oficial/Convencional Autorizado</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">MUTUAL SENDEROS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional/PMI Aut.</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://senderosweb.ddaval.com.ar/" target="_blank">Senderos</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OMINT</th>
+          <td class="dias">60</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmalink.html">Farmalink</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSA ACTORES</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/gruporoisa.html">Grupo Roisa</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://osaweb.ddaval.com.ar/" target="_blank">OsaWeb</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSADEF</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmmas.html">Farmmas</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a>Sistema</td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSADRA (ARBITROS DEPORTIVOS)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSADRA (ARBITROS DEPORTIVOS)CRONIC/ANTICON/DISCAP</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.garantiamedica.com" target="_blank">Garantía Medica</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSALARA</th>
+          <td class="dias">15</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSAM ACTIVIDAD MINERA</th>
+          <td class="dias">15</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://osamweb.ddaval.com.ar/" target="_blank">Osam</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSAMOC </th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/gruporoisa.html">Grupo Roisa</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://val.gunei.com.ar/" target="_blank">Gunei</a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSAPM (AGENTE DE PROPAGANDA MEDICA)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSCOEMA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://sinval.ddaval.com.ar/" target="_blank">Sinval</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSDE</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/praxys.html">Praxys Polvorines</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a>Sistema</td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSDEPYM</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="farmaciasnet.gmssa.com.ar" target="_blank">Farmaciasnet</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSECAC</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/gms.html">GMS Aguila</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://farmaciasnet.gmssa.com.ar/User/Login" target="_blank">Farmaciasnet</a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSEMM (EMPLEADOS MARINA MERCANTE)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSETYA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/gruporoisa.html">Grupo Roisa</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://val.gunei.com.ar/" target="_blank">Gunei</a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSFATLYF LUZ Y FUERZA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/intervalsa.html">Intervalsa Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSFE</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSIM COADYUVANTES</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSIM OMINT</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSMATA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar/" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSMEDICA CAPITAL FEDERAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSMISS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/gruporoisa.html">Grupo Roisa</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://val.gunei.com.ar" target="_blank">Gunei</a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSOSS OBRAS SANITARIAS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmasur.html">Farmasur</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSPA PORTUARIOS</th>
+          <td class="dias">15</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSPAGA (PERSONAL DE AGUAS Y GASEOSAS)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPAP PERFUMISTAS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmmas.html">Farmmas</a></td>
+          <td class="recetario">Convencional/Oficial o Part Aut para PMI</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar/" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSPAV VITIVINICOLA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional excepto con propaganda médica</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPE PETROLEROS</th>
+          <td class="dias">60</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSPEP(ENSEÑANZA PRIVADA)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPEP (ENSEÑANZA PRIVADA)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional Autorizado</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.garantiamedica.com/" target="_blank">Garantía Medica</a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSPEP (ESPECTACULOS PÚBLICOS)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSPEP (PANADEROS)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSPESGYPE</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/audifarm.html">Audifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPFESIQYP</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/audifarm.html">Audifarm</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar/" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPFP PINTURA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://ospfpweb.ddaval.com.ar/" target="_blank">OSPFP</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPIA -ALIMENTACIÓN- PROVINCIA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Oficial/Convencional 
+            <a tabindex="0" class="btn btn-icon" role="button" data-bs-toggle="popover" 
+            data-bs-trigger="focus" data-bs-title="Credencial" 
+            data-bs-content="En sistema cargar: DNIxxxxxxxx"><i class="bi bi-exclamation-diamond-fill"></i></a>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colegio</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPIB</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/gruporoisa.html">Grupo Roisa</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://val.gunei.com.ar" target="_blank">Gunei</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPIC CAUCHO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cafabo.xeilon.com.ar/crw/login.php" target="_blank">Ospic</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPICAL CALZADO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://ospicalweb.ddaval.com.ar" target="_blank">Ospical</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPICAL CALZADO CRONICIDAD</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://ospicalweb.ddaval.com.ar" target="_blank">Ospical</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPICHA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
+          <td class="recetario">Convencional/Oficial</td>
+          <td class="cartilla"><a class="link-mandataria" href="" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://gdr.admifarmgroup.com/" target="_blank">Admifarm Group</a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSPIF FÓSFOROS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPIL-AMPIL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr>
+          <th scope="row">OSPIL</th>
+          <td class="dias">15</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPIP PLASTICO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPIT TEXTIL</th>
+          <td class="dias">20</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPIT TEXTIL CRONICIDAD</th>
+          <td class="dias">20</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPM MOSAISTAS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmmas.html">Farmmas</a></td>
+          <td class="recetario">Cualquiera/Oficial (Solo PMI)</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPM MOSAISTAS CRONICIDAD</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmmas.html">Farmmas</a></td>
+          <td class="recetario">Convencional/Oficial (Ambos autorizados)</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPOCE</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://gdr.admifarmgroup.com/Validador.aspx" target="_blank">Admifarm</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPROTURA AMBULATORIO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/audifarm.html">Audifarm</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar/" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPROTURA CRONICIDAD</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/audifarm.html">Audifarm</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar/" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPSA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
+          <td class="recetario">Convencional/Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSSEG SEGUROS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmalink.html">Farmalink</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSSIMRA-HEALTH MEDICAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmmas.html">Farmmas</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row"></th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        
+
+
+        
+
+    </table>
+  </div>
+</div>
+</main>
 
 
 
@@ -94,8 +1653,14 @@
   
     
       <!--Bootstrap-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
+      <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+      </script>
+
   </body>
   </html>

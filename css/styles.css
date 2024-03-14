@@ -7,6 +7,7 @@
 /*Barras de nav*/
 header {
   padding-top: 1rem;
+  position: static;
 }
 header .user a {
   text-decoration: none;
@@ -57,6 +58,9 @@ main {
   min-height: 80vh;
 }
 
+.pagina-principal .bi {
+  font-size: 1em;
+}
 .pagina-principal .card {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -84,7 +88,7 @@ main {
   color: #2F3684;
 }
 .pagina-principal .card-blue {
-  border: 1px solid #2F3684;
+  border: 2px solid #2F3684;
   /*border-radius: 10px;*/
   margin: 1.5rem;
   padding: 0.5rem;
@@ -96,7 +100,7 @@ main {
   margin: 0.5rem;
 }
 .pagina-principal .card-orange {
-  border: 1px solid #F8934E;
+  border: 2px solid #F8934E;
   /*border-radius: 10px;*/
   margin: 1.5rem;
   padding: 0.5rem;
@@ -113,7 +117,7 @@ main {
 }
 
 .card-mandataria {
-  border: 1px solid #2F3684;
+  border: 2px solid #2F3684;
   border-radius: 5px;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -168,6 +172,7 @@ main {
   --bs-accordion-color:#2F3684;
   --bs-accordion-border-color: #2F3684;
   --bs-accordion-btn-focus-box-shadow: none;
+  margin-bottom: 1rem;
 }
 
 .accordion-body a {
@@ -177,6 +182,135 @@ main {
 }
 .accordion-body a:hover {
   color: rgba(209, 111, 45, 0.4156862745);
+}
+
+.botonArriba {
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  transition: all 1s;
+}
+.botonArriba .bi {
+  font-size: 2em;
+  color: #2F3684;
+}
+
+/*Prestadores*/
+.title {
+  color: #2F3684;
+  padding-left: 0.5rem;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.prestador {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.prestador .container-fluid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.prestador .container-fluid .imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prestador .container-fluid .imagen .img-prest {
+  width: 500px;
+}
+
+.prestadores {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.prestadores .tarjeta {
+  background-color: #D7DBEA;
+  padding: 1rem;
+  box-shadow: 5px solid #2F3684;
+}
+.prestadores .tarjeta a {
+  text-decoration: none;
+  color: #2F3684;
+}
+.prestadores .prest {
+  width: 100%;
+  transition: 1s;
+}
+.prestadores .prest:hover {
+  width: 70%;
+  background-color: rgba(248, 146, 78, 0.4156862745);
+}
+.prestadores .prest-2 {
+  width: 100%;
+  background-color: rgba(248, 146, 78, 0.4156862745);
+  transition: 1s;
+}
+.prestadores .prest-2:hover {
+  width: 70%;
+  background-color: #D7DBEA;
+}
+
+/**
+* ----------------------------------------
+* animation tracking-in-expand
+* ----------------------------------------
+*/
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Listado*/
+.table-responsive {
+  margin: 0.5rem;
+  font-size: 13px;
+}
+.table-responsive .table-bordered {
+  border-color: #2F3684;
+}
+.table-responsive .primera-fila > tr {
+  text-align: center;
+}
+
+tbody .link-mandataria {
+  text-decoration: none;
+  color: #2F3684;
+  font-weight: bold;
+}
+tbody .link-mandataria:hover {
+  color: #F8934E;
+}
+tbody .link-obs {
+  color: #2F3684;
+  font-weight: bold;
+}
+tbody td, tbody th {
+  text-align: center;
+}
+tbody .recetario .btn {
+  font-size: 13px;
+  background-color: #2F3684;
+  border: none;
+  color: white;
+}
+tbody .recetario .btn:hover {
+  background-color: #D7DBEA;
+  color: #2F3684;
+}
+tbody .recetario .btn-icon {
+  background-color: transparent;
+  color: #2F3684;
+  font-size: 15px;
 }
 
 @media (max-width: 767px) {
@@ -212,5 +346,14 @@ main {
 @media (max-width: 378px) {
   .footer {
     font-size: 1rem;
+  }
+}
+@media (max-width: 1160px) {
+  .prestador .container-fluid {
+    display: grid;
+    grid-template-columns: 3fr;
+  }
+  .prestador .container-fluid .imagen {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

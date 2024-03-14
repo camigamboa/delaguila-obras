@@ -1,0 +1,55 @@
+/*Listado*/
+
+.table-responsive {
+    margin: 0.5rem;
+    font-size: 13px;
+
+    .table-bordered {
+      border-color: $colorAzulPrincipal;
+    }
+
+    .primera-fila > tr {
+        text-align: center;
+    }
+}
+
+tbody {
+  .link-mandataria {
+      text-decoration: none;
+      color: $colorAzulPrincipal;
+      font-weight: bold;
+
+      &:hover {
+          color: $colorNaranjaPrincipal;
+      }
+  }
+
+  .link-obs {
+      color: $colorAzulPrincipal;
+      font-weight: bold;
+  }
+
+    td , th {
+      text-align: center;
+  }
+
+  .recetario {
+    .btn {
+        font-size: 13px;
+        background-color: $colorAzulPrincipal;
+        border: none;
+        color: white;
+
+        &:hover {
+            background-color: $colorAzulSecundario;
+            color: $colorAzulPrincipal;
+        }
+    }
+
+    .btn-icon {
+      background-color: transparent;
+      color: $colorAzulPrincipal;
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.botonArriba {
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    transition: all 1s;
+
+  .bi {
+    font-size: 2em;
+    color: $colorAzulPrincipal;
+  }
+}
