@@ -278,8 +278,11 @@ main {
 .table-responsive .table-bordered {
   border-color: #2F3684;
 }
-.table-responsive .primera-fila > tr {
+.table-responsive .primera-fila > tr > th {
   text-align: center;
+}
+.table-responsive .table-active {
+  --bs-table-active-bg: #D7DBEA;
 }
 
 tbody .link-mandataria {
@@ -311,6 +314,62 @@ tbody .recetario .btn-icon {
   background-color: transparent;
   color: #2F3684;
   font-size: 15px;
+}
+
+.pages {
+  color: #2F3684;
+}
+.pages .table-responsive {
+  font-size: 15px;
+}
+.pages a {
+  color: #2F3684;
+}
+
+/*Novedades*/
+.novedades {
+  margin-left: 1rem;
+  display: flex;
+}
+.novedades h3 {
+  padding-top: 0.5rem;
+  color: #2F3684;
+  font-weight: bold;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+.novedades h5 {
+  color: #2F3684;
+}
+.novedades .li-datos {
+  padding-top: 1rem;
+}
+.novedades .li-consultas {
+  color: #2F3684;
+  font-weight: bold;
+}
+
+.img-container-cons {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.img-container-cons .news-img {
+  float: right;
+  border-radius: 50px;
+  justify-content: right;
+  display: flex;
+  box-shadow: 0 1px 5px #D7DBEA;
+  width: 500px;
+}
+
+.img-container-news {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.img-container-news .news-img {
+  float: right;
+  border-radius: 50px;
+  justify-content: right;
+  display: flex;
+  box-shadow: 0 1px 5px #D7DBEA;
+  width: 500px;
 }
 
 @media (max-width: 767px) {

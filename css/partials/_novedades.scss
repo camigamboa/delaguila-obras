@@ -1,0 +1,50 @@
+/*Novedades*/
+
+.novedades {
+    margin-left: 1rem;
+    display: flex;
+
+    h3 {
+        padding-top: 0.5rem;
+        color: $colorAzulPrincipal;
+        font-weight: bold;
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+    h5 {
+        color: $colorAzulPrincipal;
+    }
+    .li-datos {
+        padding-top: 1rem;
+    }
+    .li-consultas {
+        color: $colorAzulPrincipal;
+        font-weight: bold;
+    }
+
+}
+    .img-container-cons {
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+    .news-img {
+        float: right;
+        border-radius: 50px;
+        justify-content: right;
+        display: flex;
+        box-shadow: 0 1px 5px $colorAzulSecundario;
+        width: 500px;
+    }
+    }
+    .img-container-news {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+    .news-img {
+        float: right;
+        border-radius: 50px;
+        justify-content: right;
+        display: flex;
+        box-shadow: 0 1px 5px $colorAzulSecundario;
+        width: 500px;
+    }
+  }  

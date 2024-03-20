@@ -10,12 +10,16 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <!-- DataTable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
+    
+    <!--MyStyle-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <header>
     <!--Primera Navbar-->
@@ -23,10 +27,13 @@
         <div class="container-fluid justify-content-around first-nav">
           <a href="../index.html"><img src="../assets/iconoaguilaon 1.svg" alt="">
           </a>
-          <form class="d-flex" role="search">
+          <!--<form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn" type="submit"><img src="../assets/search.svg" alt=""></a></button>
-          </form>
+          </form>-->
+          <div>
+            
+          </div>
           <div class="user">
             <a href="../pages/ingresar.html"><img src="../assets/user.png" alt="Logo user"> Ingresar</a>
           </div> 
@@ -69,8 +76,8 @@
 <main>
   <div class="container">
   <div class="table-responsive">
-    <table class="table table-bordered" id="myTable">
-      <thead class="sticky-top primera-fila">
+    <table class="table table-bordered" id="example">
+      <thead class="primera-fila">
         <tr>
           <th scope="col">OBRA SOCIAL</th>
           <th scope="col">DIAS</th>
@@ -174,6 +181,194 @@
           <td class="generico">Si</td>
           <td class="diagnostico">Si</td>
           <td class="observaciones"></td>
+        </tr>
+        <tr class="table-active ">
+          <th scope="row">APOC</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html" >Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalapoc">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalapoc" tabindex="-1" aria-labelledby="exampleModalLabelapoc" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelapoc">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Para los medicamentos que tienen descuento de IOMA, hasta un 50% de descuento.</p><br>
+                     <p>Para los medicamentos que NO tienen descuento de IOMA 30% de descuento con cobertura hasta $225 por medicamento.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">ART ASOCIART</th>
+          <td class="dias">48 hs</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr>
+          <th scope="row">ART BERKLEY</th>
+          <td class="dias">10</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">ART COLONIA SUIZA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://sinval.ddaval.com.ar/" target="_blank">Sinval</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">ART EXPERTA</th>
+          <td class="dias">10</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr>
+          <th scope="row">ART FEDERACION PATRONAL</th>
+          <td class="dias">5</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"></td>
+        </tr>
+        <tr>
+          <th scope="row">ART LA SEGUNDA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">ART PREVENCION</th>
+          <td class="dias">10</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">ART PROVINCIA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://sinval.ddaval.com.ar/" target="_blank">Sinval</a></td>
+        </tr>
+        <tr>
+          <th scope="row">ART RECONQUISTA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"></td>
+        </tr>
+        <tr>
+          <th scope="row">ART SWISS MEDICAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmalink.html">Farmalink Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"></td>
+        </tr>
+        <tr>
+          <th scope="row">ART VICTORIA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">ASOCIACION JUDICIAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html" >Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalasoc">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalasoc" tabindex="-1" aria-labelledby="exampleModalLabelasoc" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelasoc">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Actua en los planes que requieren autorización.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar" target="_blank">Colfarma</a></td>
         </tr>
 
         <tr class="table-active">
@@ -365,6 +560,40 @@
           <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
         </tr>
 
+        <tr class="table-active ">
+          <th scope="row">CEMURPO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalcemurpo">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalcemurpo" tabindex="-1" aria-labelledby="exampleModalLabelcemurpo" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelcemurpo">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Sólo medicamentos que tienen descuento de IOMA.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+
         <tr class="table-active">
           <th scope="row">COMEI</th>
           <td class="dias">30</td>
@@ -446,6 +675,39 @@
           <td class="diagnostico">No</td>
           <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
         </tr>
+        <tr class="table-active ">
+          <th scope="row">DPAS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaldpas">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModaldpas" tabindex="-1" aria-labelledby="exampleModalLabeldpas" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabeldpas">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Sólo medicamentos que tienen descuento de IOMA.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
         <tr class="table-active">
           <th scope="row">EMEREGENCIAS</th>
           <td class="dias">30</td>
@@ -478,6 +740,40 @@
           <td class="generico">Si</td>
           <td class="diagnostico">Si</td>
           <td class="observaciones"><a class="link-obs" href="http://plangamaweb.ddaval.com.ar/" target="_blank">Plan Gama</a></td>
+        </tr>
+        <tr class="table-active ">
+          <th scope="row">FEBOS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalfebos">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalfebos" tabindex="-1" aria-labelledby="exampleModalLabelfebos" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelfebos">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Para los medicamentos que tienen descuento de IOMA, recetario oficial de IOMA (SAMO NO).</p><br>
+                     <p>Para los medicamentos que NO tienen descuento de IOMA, cualquier recetario.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
         </tr>
         <tr class="table-active">
           <th scope="row">FEMEDICA</th>
@@ -632,6 +928,45 @@
           <td class="generico">Si</td>
           <td class="diagnostico">No</td>
           <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active ">
+          <th scope="row">JUSTICIA NACIONAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalsuteba">
+              Oficial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalsuteba" tabindex="-1" aria-labelledby="exampleModalLabelsuteba" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelsuteba">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p><strong>Solo actúa como Co-seguro de Poder Judicial</strong></p>
+                    <p>(1) Justicia Nacional reconoce como Co-seguro, un porcentaje del 30% (treinta por ciento) pero se aplicará, para dicha
+                    cobertura, un tope de $ 5.400- por cada unidad farmacológica.</p>
+                    <p>(2) Los recetarios oficiales son de fondo blanco, impresos en rojo y poseen dos renglones.</p>
+                    <p>(3) Cuando la Obra Social primaria “Poder Judicial” posea los 3 Rp prescriptos y el Afiliado presente más de una receta del co-
+                    seguro, donde se prescriban los mismos medicamentos de Poder Judicial, se deberá efectuar una sola validación, con lo
+                    cual se deberá adjuntar a las recetas del co-seguro Justicia Nacional un solo comprobante de validación.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
         </tr>
         <tr class="table-active">
           <th scope="row">LUIS PASTEUR</th>
@@ -1391,15 +1726,334 @@
           <td class="mandataria"><a class="link-mandataria" href="./normas/farmmas.html">Farmmas</a></td>
           <td class="recetario">Convencional</td>
           <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSTEL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia</a></td>
+          <td class="recetario">30</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSTV</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
           <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
         </tr>
         <tr class="table-active">
-          <th scope="row"></th>
+          <th scope="row">PAMI</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Oficial/Digitales</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://pamiweb.handlerfacaf.com.ar/" target="_blank">Pami</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PODER JUDICIAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional/Electronicas</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">POLICIA FEDERAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Oficial/Electronica</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://sinval.ddaval.com.ar/" target="_blank">Policia</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PREMEDIC MEDICINA PRIVADA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete"></td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PREVENCION SALUD</th>
           <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PRIVAMED</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PROGRAMA DAR</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PROGRAMA ELEGIR SALUD</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PROGRAMA INICIA</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PROGRAMA NUTRIR MAS</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PROGRAMA TEVA</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PROGRAMA VIVIENDO MEJOR</th>
+          <td class="dias"></td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario"></td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico"></td>
+          <td class="diagnostico"></td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">PROSAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/gruporoisa.html">Grupo Roisa</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://val.gunei.com.ar" target="_blank">Gunei</a></td>
+        </tr>
+        <tr>
+          <th scope="row">RAS (RED ARG. DE SANATORIOS)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">RAS (RED ARG. DE SANATORIOS) CRONICIDAD</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">RECETARIO SOLIDARIO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Oficial</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr>
+          <th scope="row">RESPUESTA MEDICA</th>
+          <td class="dias">15</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">SADAIC</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">SALUD CENTRAL MEDICINA PRIVADA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://sinval.ddaval.com.ar/" target="_blank">Sinval</a></td>
+        </tr>
+        <tr>
+          <th scope="row">SALUD INTEGRAL 24</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">SANCOR SEGURA MAX</th>
+          <td class="dias">15</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">SANCOR STAFF MEDICO </th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">SANCOR SALUD </th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">SCIENTIS AZUL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://azulweb.ddaval.com.ar/" target="_blank">Azul</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">SCIENTIS MONOTRIBUTISTAS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://monotributistasweb.ddaval.com.ar/" target="_blank">Monotributistas</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">SCIS MEDICINA PRIVADA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/intervalsa.html">Intervalsa</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">SERVICIO PENINTENCIARIO FEDERAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr>
+          <th scope="row">SIND. DE LA CARNE (OSTCARA)</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html"></a></td>
           <td class="recetario"></td>
           <td class="cartilla">-</td>
           <td class="membrete"></td>
@@ -1407,220 +2061,318 @@
           <td class="diagnostico"></td>
           <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
         </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
+        <tr>
+          <th scope="row">SINDICATO DE SALUD PÚBLICA</th>
+          <td class="dias">15</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/contratodirecto.html">C. Directo</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalsind">
+              Oficial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalsind" tabindex="-1" aria-labelledby="exampleModalLabelsind" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelsind">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Para los medicamentos que tienen descuento de IOMA, recetario oficial de IOMA + recetario SINDICATO. Cobertura hasta $9500.</p><br>
+                     <p>Para los medicamentos que NO tienen descuento de IOMA, cualquier recetario + recetario SINDICATO. Cobertura hasta $9500.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"></td>
+        </tr>
+        <tr class="table-active ">
+          <th scope="row">SOEME</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalsoeme">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalsoeme" tabindex="-1" aria-labelledby="exampleModalLabelsoeme" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelsoeme">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Con Credencial. Sólo medicamentos que tienen cobertura de IOMA.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active ">
+          <th scope="row">SUETRA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalsuetra">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalsuetra" tabindex="-1" aria-labelledby="exampleModalLabelsuetra" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelsuetra">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Sólo medicamentos que tienen descuento de IOMA.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active ">
+          <th scope="row">SUPERINTENDENCIA DE SERV. SOCIALES DE LAS POLICIAS DE LA PROV. BS. AS.</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalsssp">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalsssp" tabindex="-1" aria-labelledby="exampleModalLabelsssp" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelsssp">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Sólo medicamentos que tienen descuento de IOMA.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
+        </tr>
+        <tr class="table-active ">
+          <th scope="row">SUTEBA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalsuteba">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalsuteba" tabindex="-1" aria-labelledby="exampleModalLabelsuteba" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelsuteba">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Sólo medicamentos que tienen descuento de IOMA.</p> <br>
+                     <hr>
+                     <p>Para los medicamentos que NO tienen descuento de IOMA, con sello de autorización de Suteba indicando el porcentaje de cobertura.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
         </tr>
         <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
+          <th scope="row">SWISS MEDICAL GROUP</th>
+          <td class="dias">60</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/farmalink.html">Farmalink</a></td>
+          <td class="recetario">Convencional</td>
           <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.imed.com.ar/" target="_blank">Imed</a></td>
         </tr>
         <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
+          <th scope="row">SWISS MEDICAL SIMECO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
+          <td class="recetario">Convencional</td>
           <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">No</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://cronicos.nutrar.com" target="_blank">Nutrar</a></td>
+        </tr>
+        <tr>
+          <th scope="row">TOTAL E INTEGRAL SALUD</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/facaf.html">Facaf</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
           <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr>
+          <th scope="row">TPC SEGUROS</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+        </tr>
+        <tr class="table-active ">
+          <th scope="row">UDOCBA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaludocba">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModaludocba" tabindex="-1" aria-labelledby="exampleModalLabeludocba" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabeludocba">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Sólo medicamentos que tienen descuento de IOMA.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
         </tr>
         <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
+          <th scope="row">UNION PERSONAL</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia</a></td>
+          <td class="recetario">Convencional</td>
+          <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/UNION PERSONALABRILPRESTADORES2023.pdf">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">No</td>
+          <td class="observaciones"><a class="link-obs" href="http://www.plataformacsf.com/" target="_blank">Compañia</a></td>
+        </tr>
+        <tr class="table-active ">
+          <th scope="row">UPCN PROVINCIA BS. AS.</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/colegio.html">Colegio</a></td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalsssp">
+              Credencial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalsssp" tabindex="-1" aria-labelledby="exampleModalLabelsssp" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelsssp">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p>Para los medicamentos que tienen descuento de IOMA, recetario oficial de IOMA.</p><br>
+                     <p>Para los medicamentos que NO tienen descuento de IOMA, cualquier recetario.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+          <td class="membrete">-</td>
+          <td class="generico">-</td>
+          <td class="diagnostico">-</td>
+          <td class="observaciones"><a class="link-obs" href="https://www.colfarmaonline.org.ar/" target="_blank">Colfarma</a></td>
         </tr>
         <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
+          <th scope="row">UTA</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/dosys.html">Dosys</a></td>
+          <td class="recetario">Convencional</td>
           <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://osctcpnet.org.ar/extranetos/" target="_blank">Uta</a></td>
         </tr>
         <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
+          <th scope="row">VIA SANO</th>
+          <td class="dias">30</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/solgen.html">Solgen</a></td>
+          <td class="recetario">Oficial/Convencional(Autorizado)</td>
           <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://viasanoweb.ddaval.com.ar" target="_blank">Via Sano</a></td>
         </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        <tr class="table-active">
-          <th scope="row"></th>
-          <td class="dias"></td>
-          <td class="mandataria"><a class="link-mandataria" href="./normas/"></a></td>
-          <td class="recetario"></td>
-          <td class="cartilla">-</td>
-          <td class="membrete"></td>
-          <td class="generico"></td>
-          <td class="diagnostico"></td>
-          <td class="observaciones"><a class="link-obs" href="" target="_blank"></a></td>
-        </tr>
-        
-
-
-        
-
     </table>
   </div>
 </div>
@@ -1661,6 +2413,12 @@
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
       </script>
-
+      <!-- jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <!-- DataTable -->
+      <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+      <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+      <!-- Custom JS -->
+      <script src="../js/main.js"></script>
   </body>
   </html>

@@ -8,8 +8,12 @@
       border-color: $colorAzulPrincipal;
     }
 
-    .primera-fila > tr {
+    .primera-fila > tr > th {
         text-align: center;
+    }
+
+    .table-active {
+      --bs-table-active-bg: #D7DBEA;
     }
 }
 

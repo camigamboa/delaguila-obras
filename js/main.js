@@ -17,3 +17,35 @@ window.onload = function() {
     });
 };
 
+
+new DataTable('#example', {
+    info: false,
+    ordering: false,
+    paging: false,
+
+    "language": {
+        "lengthMenu": "Display _MENU_ records per page",
+        "zeroRecords": "Resultado no encontrado",
+        "info": "Showing page _PAGE_ of _PAGES_",
+        "infoEmpty": "No records available",
+        "infoFiltered": "(filtered from _MAX_ total records)",
+        "search": "Buscar:",
+    }
+    
+});
+
+new DataTable('#myTable', {
+    info: false,
+    ordering: false,
+    paging: false,
+
+    "language": {
+        "lengthMenu": "Display _MENU_ records per page",
+        "zeroRecords": "Resultado no encontrado",
+        "info": "Showing page _PAGE_ of _PAGES_",
+        "infoEmpty": "No records available",
+        "infoFiltered": "(filtered from _MAX_ total records)",
+        "search": "Buscar:",
+    }
+    
+});
