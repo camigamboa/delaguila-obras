@@ -23,7 +23,7 @@
 <body>
 <header>
     <!--Primera Navbar-->
-    <nav class="navbar">
+    <nav class="navbar" id?="principalListado">
         <div class="container-fluid justify-content-around first-nav">
           <a href="../index.html"><img src="../assets/iconoaguilaon 1.svg" alt="">
           </a>
@@ -375,7 +375,29 @@
           <th scope="row">ASSISTENCIAL SALUD</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalassis">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalassis" tabindex="-1" aria-labelledby="exampleModalLabelassis" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelassis">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="../assets/recetarios_credenciales/credencial_assistencial.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/ASSISTENCIAL SALUD - PRESTADORES 23-10-2017.pdf" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -528,7 +550,30 @@
           <th scope="row">CASA CRONICIDAD</th>
           <td class="dias">60</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalcasa">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalcasa" tabindex="-1" aria-labelledby="exampleModalLabelcasa" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelacasa">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="../assets/recetarios_credenciales/credencial_casacr1.png" alt="" class="img-fluid">
+                      <img src="../assets/recetarios_credenciales/credencial_casacr2.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -552,7 +597,30 @@
           <th scope="row">CEMIC 9000</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalcemic9">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalcemic9" tabindex="-1" aria-labelledby="exampleModalLabelcemic9" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelacemic9">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="../assets/recetarios_credenciales/credencial_cemic1.png" alt="" class="img-fluid">
+                      <img src="../assets/recetarios_credenciales/credencial_cemic2.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">-</td>
           <td class="generico">Si</td>
@@ -622,7 +690,30 @@
           <th scope="row">CORPORACIÓN MEDICA ASISTENCIAL</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+             <!-- Button trigger modal -->
+             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalcorpo">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalcorpo" tabindex="-1" aria-labelledby="exampleModalLabelcorpo" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelcorpo">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../assets/recetarios_credenciales/credencial_corpo.png" alt="" class="img-fluid">
+                    <img src="../assets/recetarios_credenciales/credencial_corpo2.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla"><a class="link-mandataria" href="./normas/admifarm.html">Según Plan <i class="bi bi-filetype-pdf"></i></a>
           </td>
           <td class="membrete">Membrete</td>
@@ -779,7 +870,32 @@
           <th scope="row">FEMEDICA</th>
           <td class="dias">31</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalfeme">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalfeme" tabindex="-1" aria-labelledby="exampleModalLabelfeme" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelfeme">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../assets/recetarios_credenciales/credencial_feme1.png" alt="" class="img-fluid">
+                    <img src="../assets/recetarios_credenciales/credencial_feme2.png" alt="" class="img-fluid">
+                    <img src="../assets/recetarios_credenciales/credencial_feme3.png" alt="" class="img-fluid">
+                    <img src="../assets/recetarios_credenciales/recetario_feme.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/FEMEDICA - Cartilla de Prestadores - 01-12-2020.pdf" target="_blank">Según Plan <i class="bi bi-filetype-pdf"></i></a></td>
           <td class="membrete">Membrete</td>
           <td class="generico">No</td>
@@ -1159,7 +1275,29 @@
           <th scope="row">OSADRA (ARBITROS DEPORTIVOS)</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalosadra">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalosadra" tabindex="-1" aria-labelledby="exampleModalLabelosadra" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelosadra">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../assets/recetarios_credenciales/credencial_osadra.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1170,7 +1308,29 @@
           <th scope="row">OSADRA (ARBITROS DEPORTIVOS)CRONIC/ANTICON/DISCAP</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+             <!-- Button trigger modal -->
+             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalosadra">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalosadra" tabindex="-1" aria-labelledby="exampleModalLabelosadra" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelosadra">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../assets/recetarios_credenciales/credencial_osadra.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1214,7 +1374,29 @@
           <th scope="row">OSAPM (AGENTE DE PROPAGANDA MEDICA)</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+             <!-- Button trigger modal -->
+             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaloosapm">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModaloosapm" tabindex="-1" aria-labelledby="exampleModalLabelosapm" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelosapm">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../assets/recetarios_credenciales/credencial_osapm.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">-</td>
           <td class="generico">Si</td>
@@ -1269,7 +1451,31 @@
           <th scope="row">OSEMM (EMPLEADOS MARINA MERCANTE)</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+               <!-- Button trigger modal -->
+               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaloosemm">
+                Convencional
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModaloosemm" tabindex="-1" aria-labelledby="exampleModalLabelosemm" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabelosemm">Observaciones</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="../assets/recetarios_credenciales/credencial_osemm1.png" alt="" class="img-fluid">
+                      <img src="../assets/recetarios_credenciales/credencial_osemm2.png" alt="" class="img-fluid">
+                      <img src="../assets/recetarios_credenciales/recetario_osemm.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1302,7 +1508,30 @@
           <th scope="row">OSFE</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaloosfe">
+            Convencional
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModaloosfe" tabindex="-1" aria-labelledby="exampleModalLabelosfe" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelosfe">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_osfe1.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/credencial_osfe2.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1324,7 +1553,30 @@
           <th scope="row">OSIM OMINT</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+             <!-- Button trigger modal -->
+             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalosim">
+              Convencional
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalosim" tabindex="-1" aria-labelledby="exampleModalLabelosim" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabelosim">Observaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../assets/recetarios_credenciales/credencial_osim1.png" alt="" class="img-fluid">
+                    <img src="../assets/recetarios_credenciales/credencial_osim2.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">No</td>
@@ -1346,7 +1598,29 @@
           <th scope="row">OSMEDICA CAPITAL FEDERAL</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaloosmedica">
+            Convencional
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModaloosmedica" tabindex="-1" aria-labelledby="exampleModalLabelosmedica" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelosmedica">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_osmedica.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla"><a class="link-mandataria" href="" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
           <td class="membrete">-</td>
           <td class="generico">Si</td>
@@ -1434,7 +1708,29 @@
           <th scope="row">OSPEP(ENSEÑANZA PRIVADA)</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+              <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaloospepenseñanza">
+            Convencional
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModaloospepenseñanza" tabindex="-1" aria-labelledby="exampleModalLabelospepenseñanza" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelospepenseñanza">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_ospepenseñanza.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1445,7 +1741,29 @@
           <th scope="row">OSPEP (ENSEÑANZA PRIVADA)</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional Autorizado</td>
+          <td class="recetario">
+               <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaloospepenseñanza">
+            Convencional Autorizado
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModaloospepenseñanza" tabindex="-1" aria-labelledby="exampleModalLabelospepenseñanza" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelospepenseñanza">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_ospepenseñanza.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1467,7 +1785,30 @@
           <th scope="row">OSPEP (PANADEROS)</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+              <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaloospep">
+            Convencional/Oficial
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModaloospep" tabindex="-1" aria-labelledby="exampleModalLabelospep" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelospep">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_ospep.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_ospep.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1570,7 +1911,32 @@
           <th scope="row">OSPICHA</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
-          <td class="recetario">Convencional/Oficial</td>
+          <td class="recetario">
+              <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModaloospicha">
+            Convencional/Oficial
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModaloospicha" tabindex="-1" aria-labelledby="exampleModalLabelospicha" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelospicha">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_ospicha1.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/credencial_ospicha2.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/credencial_ospicha3.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_ospicha.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla"><a class="link-mandataria" href="" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1666,10 +2032,69 @@
           <td class="observaciones"><a class="link-obs" href="https://www.misvalidaciones.com.ar" target="_blank">Mis Validaciones</a></td>
         </tr>
         <tr class="table-active">
-          <th scope="row">OSPOCE</th>
+          <th scope="row">OSPOCE ESPECIALES</th>
+          <td class="dias">31</td>
+          <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
+          <td class="recetario">
+              <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalospoce_esp">
+            Convencional
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalospoce_esp" tabindex="-1" aria-labelledby="exampleModalLabelospoce_esp" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelospoce_esp">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>El beneficiario deberá presentar DNI, LC o LE, credencial especial OSPOCE (ver modelo debajo) y 
+                    credencial definitiva de su PREPAGA (SWISS MEDICAL, OMINT, ETC.).</p>
+                  <img src="../assets/recetarios_credenciales/credencial_ospoceesp.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_ospoceesp.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
+          <td class="cartilla">-</td>
+          <td class="membrete">Membrete</td>
+          <td class="generico">Si</td>
+          <td class="diagnostico">Si</td>
+          <td class="observaciones"><a class="link-obs" href="http://gdr.admifarmgroup.com/Validador.aspx" target="_blank">Admifarm</a></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">OSPOCE INTEGRAL</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+                <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalospoce">
+            Convencional
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalospoce" tabindex="-1" aria-labelledby="exampleModalLabelospoce" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelospoce">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_ospoce.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/credencial_ospoce2.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1702,7 +2127,34 @@
           <th scope="row">OSPSA</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
-          <td class="recetario">Convencional/Oficial</td>
+          <td class="recetario">
+                    <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalospsa">
+            Convencional/Oficial
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalospsa" tabindex="-1" aria-labelledby="exampleModalLabelospsa" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelospsa">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/recetario_ospsa.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_ospsa2.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_ospsa3.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_ospsa4.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_ospsa5.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/credencial_ospsa.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1790,7 +2242,33 @@
           <th scope="row">PREMEDIC MEDICINA PRIVADA</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+              <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalpremedic">
+            Convencional/Oficial
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalpremedic" tabindex="-1" aria-labelledby="exampleModalLabelpremedic" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelpremedic">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_premedic.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_premedic2.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_premedic3.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_premedic4.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_premedic.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete"></td>
           <td class="generico">Si</td>
@@ -1812,7 +2290,31 @@
           <th scope="row">PRIVAMED</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+              <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalprivamed">
+            Convencional
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalprivamed" tabindex="-1" aria-labelledby="exampleModalLabelprivamed" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelprivamed">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_privamed.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/credencial_privamed2.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/recetario_privamed.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla"><a class="link-mandataria" href="">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -1944,7 +2446,29 @@
           <th scope="row">SADAIC</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+              <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalsadaic">
+            Convencional
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalsadaic" tabindex="-1" aria-labelledby="exampleModalLabelsadaic" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelsadaic">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/autorizacion_sadaic.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
@@ -2244,7 +2768,31 @@
           <th scope="row">SWISS MEDICAL SIMECO</th>
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/admifarm.html">Admifarm Aguila</a></td>
-          <td class="recetario">Convencional</td>
+          <td class="recetario">
+            <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalsimeco">
+            Convencional
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalsimeco" tabindex="-1" aria-labelledby="exampleModalLabelsimeco" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabelsimeco">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../assets/recetarios_credenciales/credencial_simeco.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/autorizacion_simeco.png" alt="" class="img-fluid">
+                  <img src="../assets/recetarios_credenciales/autorizacion_simeco2.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
           <td class="cartilla">-</td>
           <td class="membrete">Membrete</td>
           <td class="generico">No</td>
@@ -2311,7 +2859,7 @@
           <td class="dias">30</td>
           <td class="mandataria"><a class="link-mandataria" href="./normas/compañia.html">Compañia</a></td>
           <td class="recetario">Convencional</td>
-          <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/UNION PERSONALABRILPRESTADORES2023.pdf">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
+          <td class="cartilla"><a class="link-mandataria" href="../docs/prestadores/UNION PERSONALABRILPRESTADORES2023.pdf" target="_blank">Cartilla <i class="bi bi-filetype-pdf"></i></a></td>
           <td class="membrete">Membrete</td>
           <td class="generico">Si</td>
           <td class="diagnostico">No</td>
@@ -2376,6 +2924,10 @@
     </table>
   </div>
 </div>
+
+<button id="scrollBtn" class="botonArriba">
+  <a href="#principalListado"><i class="bi bi-arrow-up-square-fill"></i></a>
+</button>
 </main>
 
 
