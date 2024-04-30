@@ -343,6 +343,9 @@ tbody .recetario .btn-icon {
 .novedades .li-datos {
   padding-top: 1rem;
 }
+.novedades .li-datos::marker {
+  color: #2F3684;
+}
 .novedades .li-consultas {
   color: #2F3684;
   font-weight: bold;

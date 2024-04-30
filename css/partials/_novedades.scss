@@ -17,6 +17,10 @@
     }
     .li-datos {
         padding-top: 1rem;
+
+        &::marker{
+         color: $colorAzulPrincipal;   
+        }
     }
     .li-consultas {
         color: $colorAzulPrincipal;
